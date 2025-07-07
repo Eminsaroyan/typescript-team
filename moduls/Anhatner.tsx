@@ -1,6 +1,7 @@
 import Info from "./Info";
 import Bajiner from "./Bajiner";
 import Mianal from "./Mianal"
+import Lrahos from "./Lrahos";
 
 export default function Anhatner() {
     return (
@@ -8,6 +9,7 @@ export default function Anhatner() {
             <Info />
             <Bajiner />
             <Mianal />
+            <Lrahos  />
         </>
     );
 }
