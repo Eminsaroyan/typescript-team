@@ -4,6 +4,7 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Header from "../moduls/Header";
 import Anhatner from "../moduls/Anhatner";
 import Cart from "../moduls/Cart";
+import Business from "../moduls/Business";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -19,7 +20,7 @@ const hideHeaderOnPaths: string[] = [
   "/eshop",
   "/smartphones",
   "/numbers",
-  // ...այլ ուղիներ
+  "/business"
 ];
 
 const App: React.FC = () => {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Navigate to="/anhatner" replace />} />
         <Route path="/anhatner" element={<Anhatner />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/business" element={<Business />} />
       </Routes>
     </>
   );
