@@ -5,6 +5,7 @@ import Header from "../moduls/Header";
 import Anhatner from "../moduls/Anhatner";
 import Cart from "../moduls/Cart";
 import Business from "../moduls/Business";
+import Eshop from "../moduls/Eshop";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,6 +37,7 @@ const App: React.FC = () => {
         <Route path="/anhatner" element={<Anhatner />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/business" element={<Business />} />
+        <Route path="/eshop" element={<Eshop />} />
       </Routes>
     </>
   );
