@@ -3,6 +3,7 @@ import EshopNav from './Eshop-nav';
 import Eshopbajin from './Eshopbajin';
 import Eshophamar from './Eshophamar';
 import Eshopbajiner from './Eshopbajiner';
+import Fut from './Fut';
 
 export default function Eshop() {
   return (
@@ -12,6 +13,7 @@ export default function Eshop() {
       <Eshopbajin />
       <Eshophamar />
       <Eshopbajiner />
+      <Fut />
     </>
   );
 }
