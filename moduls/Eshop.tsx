@@ -2,6 +2,7 @@ import Headerone from './Headerone';
 import EshopNav from './Eshop-nav';
 import Eshopbajin from './Eshopbajin';
 import Eshophamar from './Eshophamar';
+import Eshopbajiner from './Eshopbajiner';
 
 export default function Eshop() {
   return (
@@ -10,6 +11,7 @@ export default function Eshop() {
       <EshopNav />
       <Eshopbajin />
       <Eshophamar />
+      <Eshopbajiner />
     </>
   );
 }
