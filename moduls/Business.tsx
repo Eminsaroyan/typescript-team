@@ -4,6 +4,7 @@ import Biznesbajin from "./Businessbajin";
 import Kapiskagin from "./Kapiskagin";
 import Businessbajiner from "./Businessbajiner";
 import Businessfut from "./Businessfut";
+import Fut from "./Fut";
 
 export default function Business(){
     return (
@@ -14,6 +15,7 @@ export default function Business(){
         <Kapiskagin />
         <Businessbajiner />
         <Businessfut />
+        <Fut />
         </>
     )
 }
