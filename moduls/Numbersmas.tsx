@@ -202,7 +202,7 @@ export default function Numbersmas() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  
 
                 {/* Main Numbers Content */}
                 <div className="flex-1 w-[500px]">
