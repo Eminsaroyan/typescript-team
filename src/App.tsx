@@ -8,6 +8,7 @@ import Business from "../moduls/Business";
 import Eshop from "../moduls/Eshop";
 import Smartphones from "../moduls/Smartphones";
 import Offers from "../moduls/Offers";
+import Numbers from "../moduls/Numbers";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -24,7 +25,8 @@ const hideHeaderOnPaths: string[] = [
   "/smartphones",
   "/numbers",
   "/business",
-  "/offers"
+  "/offers",
+  "/numbers"
 ];
 
 const App: React.FC = () => {
@@ -43,6 +45,7 @@ const App: React.FC = () => {
         <Route path="/eshop" element={<Eshop />} />
         <Route path="/smartphones" element={<Smartphones />} />
         <Route path="/offers" element={<Offers />} />
+        <Route path="/numbers" element={<Numbers />} />
       </Routes>
     </>
   );
