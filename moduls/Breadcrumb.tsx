@@ -9,6 +9,7 @@ const breadcrumbMap: Record<
     "/museum": "Ընկերության մասին > Կապի թանգարան",
     "/equipment": "Սարքավորումներ",
     "/smartphones": "Սմարթֆոններ",
+    "/offers": "Ակցիաներ",
     "/equipment/audio": [
         { to: "/", label: "Գլխավոր" },
         { to: "/equipment", label: "Սարքավորումներ" },
