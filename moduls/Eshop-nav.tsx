@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function EshopNav() {
   return (
-    <nav className="flex items-center max-w-[1400px] pl-[160px] pr-[160px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
+    <nav className="flex items-center  pl-[200px] pr-[160px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
       <img
         src="https://www.telecomarmenia.am/img/logo.svg?v=1"
         alt="Logo"
