@@ -3,6 +3,7 @@ import Equipmentlink from "./Equipmentlink";
 import EshopNav from "./Eshop-nav";
 import Fut from "./Fut";
 import Headerone from "./Headerone";
+import Equipmentfiltr from "./Equipmentfiltr";
 
 export default function (){
     return (
@@ -12,6 +13,7 @@ export default function (){
             <img src="https://www.telecomarmenia.am/images/product_category/1/15839958567605.jpeg" alt="" className="w-[100%]" />
             <Equipmentlink />
             <Breadcrumb />
+            <Equipmentfiltr />
             <Fut />
         </div>
     )
