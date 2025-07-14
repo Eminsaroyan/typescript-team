@@ -67,9 +67,14 @@ const Headerone: React.FC = () => {
                         {lang}
                     </p>
                 ))}
-                <p className="m-[5px] p-[12px] cursor-pointer hover:bg-[#0A6C9F] transition-colors duration-1000">
+                <Link
+                    to="/login"
+                    target="_blank"
+                    className={`text-[#ffffff] p-[12px] no-underline flex items-center transition-colors duration-1000 ${pathname === '/login' ? 'bg-[#0A6C9F]' : 'hover:bg-[#0A6C9F]'
+                        }`}
+                >
                     Անձնական գրասենյակ
-                </p>
+                </Link>
 
                 <Link to="/Cart" className="relative ml-[4] text-[#ffffff]">
                     <ShoppingCart />
