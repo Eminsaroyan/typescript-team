@@ -15,8 +15,9 @@ import Numbers from "../moduls/Numbers";
 import Equipment from "../moduls/Equipment";
 import Login from "../moduls/Login";
 import Registration from "../moduls/Registration";
+import ChatPage from "../moduls/ChatPage";
+import ChatToggle from "../moduls/ChatToggleButton"; // ✅ Ավելացված է
 
-// Scroll վերև երբ route փոխվում է
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -25,14 +26,12 @@ function ScrollToTop() {
   return null;
 }
 
-// Պաշտպանված էջերի փաթեթիչ
 const PrivateRoute = ({ children }: { children: React.ReactNode }) => {
   const [user, loading] = useAuthState(auth);
   if (loading) return <p>Բեռնվում է...</p>;
   return user ? <>{children}</> : <Navigate to="/login" replace />;
 };
 
-// Որ route-ներում չցուցադրել Header-ը
 const hideHeaderOnPaths: string[] = [
   "/eshop",
   "/smartphones",
@@ -47,15 +46,17 @@ const hideHeaderOnPaths: string[] = [
 const App: React.FC = () => {
   const location = useLocation();
   const shouldShowHeader = !hideHeaderOnPaths.includes(location.pathname);
+  const shouldShowChat = !["/login", "/registration"].includes(location.pathname); // ✅ Chat visibility control
 
   return (
     <>
       {shouldShowHeader && <Header />}
       <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Navigate to="/anhatner" replace />} />
 
-        {/* Պաշտպանված route-ներ */}
+        {/* Պաշտպանված էջեր */}
         <Route path="/anhatner" element={<PrivateRoute><Anhatner /></PrivateRoute>} />
         <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
         <Route path="/business" element={<PrivateRoute><Business /></PrivateRoute>} />
@@ -64,11 +65,14 @@ const App: React.FC = () => {
         <Route path="/offers" element={<PrivateRoute><Offers /></PrivateRoute>} />
         <Route path="/numbers" element={<PrivateRoute><Numbers /></PrivateRoute>} />
         <Route path="/equipment" element={<PrivateRoute><Equipment /></PrivateRoute>} />
+        <Route path="/chat/:email" element={<ChatPage />} />
 
-        {/* Մուտքի էջը */}
+        {/* Հասանելի բոլորին */}
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>
+
+      {shouldShowChat && <ChatToggle />} {/* ✅ Սա ցուցադրվում է միայն երբ պետք է */}
     </>
   );
 };
