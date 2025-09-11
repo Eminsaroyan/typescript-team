@@ -25,6 +25,11 @@ const breadcrumbMap: Record<
         { to: "/equipment", label: "Սարքավորումներ" },
         { label: "Նոթբուքեր և Պլանշետներ" },
     ],
+    "/routers": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/equipment", label: "Սարքավորումներ" },
+        { label: " Ռոուտերներ" },
+    ],
 };
 
 export default function Breadcrumb() {
