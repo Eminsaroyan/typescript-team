@@ -15,6 +15,11 @@ const breadcrumbMap: Record<
         { to: "/equipment", label: "Սարքավորումներ" },
         { label: "Աուդիո" },
     ],
+    "/smart-home": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/equipment", label: "Սարքավորումներ" },
+        { label: "Խելացի տուն" },
+    ],
 
 };
 

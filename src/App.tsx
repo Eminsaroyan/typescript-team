@@ -16,7 +16,8 @@ import Equipment from "../moduls/Equipment";
 import Login from "../moduls/Login";
 import Registration from "../moduls/Registration";
 import ChatPage from "../moduls/ChatPage";
-import ChatToggle from "../moduls/ChatToggleButton"; // ✅ Ավելացված է
+import ChatToggle from "../moduls/ChatToggleButton";
+import Smarthome from "../moduls/Smart-home"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,7 +41,8 @@ const hideHeaderOnPaths: string[] = [
   "/offers",
   "/equipment",
   "/login",
-  "/registration"
+  "/registration",
+  "/smart-home"
 ];
 
 const App: React.FC = () => {
@@ -66,6 +68,7 @@ const App: React.FC = () => {
         <Route path="/numbers" element={<PrivateRoute><Numbers /></PrivateRoute>} />
         <Route path="/equipment" element={<PrivateRoute><Equipment /></PrivateRoute>} />
         <Route path="/chat/:email" element={<ChatPage />} />
+        <Route path="/smart-home" element={<PrivateRoute><Smarthome /></PrivateRoute>} />
 
         {/* Հասանելի բոլորին */}
         <Route path="/login" element={<Login />} />
