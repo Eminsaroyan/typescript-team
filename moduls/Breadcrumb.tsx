@@ -20,7 +20,11 @@ const breadcrumbMap: Record<
         { to: "/equipment", label: "Սարքավորումներ" },
         { label: "Խելացի տուն" },
     ],
-
+    "/laptops-tablets": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/equipment", label: "Սարքավորումներ" },
+        { label: "Նոթբուքեր և Պլանշետներ" },
+    ],
 };
 
 export default function Breadcrumb() {

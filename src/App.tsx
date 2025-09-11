@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation, Form } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../moduls/firebase";
 
@@ -18,6 +18,7 @@ import Registration from "../moduls/Registration";
 import ChatPage from "../moduls/ChatPage";
 import ChatToggle from "../moduls/ChatToggleButton";
 import Smarthome from "../moduls/Smart-home"
+import Laptops from "../moduls/Laptops-tablets"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,7 +43,8 @@ const hideHeaderOnPaths: string[] = [
   "/equipment",
   "/login",
   "/registration",
-  "/smart-home"
+  "/smart-home",
+  "/laptops-tablets"
 ];
 
 const App: React.FC = () => {
@@ -69,6 +71,7 @@ const App: React.FC = () => {
         <Route path="/equipment" element={<PrivateRoute><Equipment /></PrivateRoute>} />
         <Route path="/chat/:email" element={<ChatPage />} />
         <Route path="/smart-home" element={<PrivateRoute><Smarthome /></PrivateRoute>} />
+        <Route path="/laptops-tablets" element={<PrivateRoute><Laptops /></PrivateRoute>} />
 
         {/* Հասանելի բոլորին */}
         <Route path="/login" element={<Login />} />
