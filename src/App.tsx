@@ -50,7 +50,7 @@ const hideHeaderOnPaths: string[] = [
 const App: React.FC = () => {
   const location = useLocation();
   const shouldShowHeader = !hideHeaderOnPaths.includes(location.pathname);
-  const shouldShowChat = !["/login", "/registration"].includes(location.pathname); // ✅ Chat visibility control
+  const shouldShowChat = !["/login", "/registration"].includes(location.pathname);
 
   return (
     <>
