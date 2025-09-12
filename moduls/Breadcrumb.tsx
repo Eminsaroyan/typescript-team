@@ -30,6 +30,11 @@ const breadcrumbMap: Record<
         { to: "/equipment", label: "Սարքավորումներ" },
         { label: " Ռոուտերներ" },
     ],
+    "/gamepads": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/equipment", label: "Սարքավորումներ" },
+        { label: "GamePad" },
+    ],
 };
 
 export default function Breadcrumb() {
