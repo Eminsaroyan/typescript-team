@@ -35,12 +35,17 @@ const breadcrumbMap: Record<
         { to: "/equipment", label: "Սարքավորումներ" },
         { label: "GamePad" },
     ],
-      "/e-transport": [
-    { to: "/", label: "Գլխավոր" },
-    { to: "/equipment", label: "Սարքավորումներ" },
-    { label: "Էլ․ տրանսպորտ" },
-  ],
+    "/e-transport": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/equipment", label: "Սարքավորումներ" },
+        { label: "Էլ․ տրանսպորտ" },
+    ],
     "/accessories": "Աքսեսուարներ",
+    "/smart-watches": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/accessories", label: "Աքսեսուարներ" },
+        { label: "Սմարթ ժամացույցներ" },
+    ],
 };
 
 export default function Breadcrumb() {
