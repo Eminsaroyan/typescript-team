@@ -24,6 +24,7 @@ import Gamepads from "../moduls/Gamepads";
 import Etransport from "../moduls/E-transport"
 import Accessories from "../moduls/Accessories"
 import Smartwatch from "../moduls/Smart-watches"
+import Audio from "../moduls/Audio"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,7 +55,8 @@ const hideHeaderOnPaths: string[] = [
   "/gamepads",
   "/e-transport",
   "/accessories",
-  "/smart-watches"
+  "/smart-watches",
+  "/audio"
 ];
 
 const App: React.FC = () => {
@@ -86,6 +88,7 @@ const App: React.FC = () => {
         <Route path="/e-transport" element={<PrivateRoute><Etransport /></PrivateRoute>} />
         <Route path="/accessories" element={<PrivateRoute><Accessories /></PrivateRoute>} />
         <Route path="/Smart-watches" element={<PrivateRoute><Smartwatch /></PrivateRoute>} />
+        <Route path="/Audio" element={<PrivateRoute><Audio /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />

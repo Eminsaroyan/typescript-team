@@ -46,6 +46,11 @@ const breadcrumbMap: Record<
         { to: "/accessories", label: "Աքսեսուարներ" },
         { label: "Սմարթ ժամացույցներ" },
     ],
+      "/audio": [
+    { to: "/", label: "Գլխավոր" },
+    { to: "/accessories", label: "Աքսեսուարներ" },
+    { label: "Աուդիո" },
+  ],
 };
 
 export default function Breadcrumb() {
