@@ -51,6 +51,11 @@ const breadcrumbMap: Record<
     { to: "/accessories", label: "Աքսեսուարներ" },
     { label: "Աուդիո" },
   ],
+    "/storage": [
+    { to: "/", label: "Գլխավոր" },
+    { to: "/accessories", label: "Աքսեսուարներ" },
+    { label: "Կրիչներ" },
+  ],
 };
 
 export default function Breadcrumb() {
@@ -92,7 +97,7 @@ export default function Breadcrumb() {
 
     const pathSegments = cleanedPath.split("/").filter(Boolean);
 
-    let matchedPath = "";
+    let matchedPath  = "";
     let bestMatch = null;
 
     for (let i = 1; i <= pathSegments.length; i++) {

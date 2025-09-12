@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Routes, Route, Navigate, useLocation, Form } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation, } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../moduls/firebase";
 
@@ -25,6 +25,7 @@ import Etransport from "../moduls/E-transport"
 import Accessories from "../moduls/Accessories"
 import Smartwatch from "../moduls/Smart-watches"
 import Audio from "../moduls/Audio"
+import Storage from "../moduls/Sorage"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -56,7 +57,8 @@ const hideHeaderOnPaths: string[] = [
   "/e-transport",
   "/accessories",
   "/smart-watches",
-  "/audio"
+  "/audio",
+  "/storage"
 ];
 
 const App: React.FC = () => {
@@ -89,6 +91,7 @@ const App: React.FC = () => {
         <Route path="/accessories" element={<PrivateRoute><Accessories /></PrivateRoute>} />
         <Route path="/Smart-watches" element={<PrivateRoute><Smartwatch /></PrivateRoute>} />
         <Route path="/Audio" element={<PrivateRoute><Audio /></PrivateRoute>} />
+        <Route path="/Storage" element={<PrivateRoute><Storage /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
@@ -100,3 +103,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
