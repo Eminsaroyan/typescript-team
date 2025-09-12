@@ -14,7 +14,6 @@ const Headerone: React.FC = () => {
         state.cart.reduce((total: number, item: { quantity: number }) => total + item.quantity, 0)
     );
 
-    // Language state with type
     const getInitialLanguage = (): Language => {
         const saved = localStorage.getItem('language');
         if (saved && LANGUAGES.includes(saved as Language)) {

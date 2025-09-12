@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, useLocation, Form } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../moduls/firebase";
 
-// Մոդուլներ
+
 import Header from "../moduls/Header";
 import Anhatner from "../moduls/Anhatner";
 import Cart from "../moduls/Cart";
@@ -20,7 +20,8 @@ import ChatToggle from "../moduls/ChatToggleButton";
 import Smarthome from "../moduls/Smart-home";
 import Laptops from "../moduls/Laptops-tablets";
 import Routers from "../moduls/Routers"
-import Gamepads from "../moduls/Gamepads"
+import Gamepads from "../moduls/Gamepads";
+import Etransport from "../moduls/E-transport"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -48,7 +49,8 @@ const hideHeaderOnPaths: string[] = [
   "/smart-home",
   "/laptops-tablets",
   "/routers",
-  "/gamepads"
+  "/gamepads",
+  "/e-transport"
 ];
 
 const App: React.FC = () => {
@@ -64,7 +66,6 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/anhatner" replace />} />
 
-        {/* Պաշտպանված էջեր */}
         <Route path="/anhatner" element={<PrivateRoute><Anhatner /></PrivateRoute>} />
         <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
         <Route path="/business" element={<PrivateRoute><Business /></PrivateRoute>} />
@@ -78,13 +79,13 @@ const App: React.FC = () => {
         <Route path="/laptops-tablets" element={<PrivateRoute><Laptops /></PrivateRoute>} />
         <Route path="/routers" element={<PrivateRoute><Routers /></PrivateRoute>} />
         <Route path="/gamepads" element={<PrivateRoute><Gamepads /></PrivateRoute>} />
+        <Route path="/e-transport" element={<PrivateRoute><Etransport /></PrivateRoute>} />
 
-        {/* Հասանելի բոլորին */}
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>
 
-      {shouldShowChat && <ChatToggle />} {/* ✅ Սա ցուցադրվում է միայն երբ պետք է */}
+      {shouldShowChat && <ChatToggle />}
     </>
   );
 };

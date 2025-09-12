@@ -35,17 +35,20 @@ const breadcrumbMap: Record<
         { to: "/equipment", label: "Սարքավորումներ" },
         { label: "GamePad" },
     ],
+      "/e-transport": [
+    { to: "/", label: "Գլխավոր" },
+    { to: "/equipment", label: "Սարքավորումներ" },
+    { label: "Էլ․ տրանսպորտ" },
+  ],
 };
 
 export default function Breadcrumb() {
     const { pathname } = useLocation();
 
-    // Հեռացնում ենք վերջի / եթե կա
     const cleanedPath = pathname.endsWith("/")
         ? pathname.slice(0, -1)
         : pathname;
 
-    // Փորձում ենք գտնել ուղիղ համապատասխանություն
     const exactMatch = breadcrumbMap[cleanedPath];
 
     if (exactMatch) {
@@ -76,7 +79,6 @@ export default function Breadcrumb() {
         );
     }
 
-    // Դինամիկ ճանապարհների (օր. `/equipment/audio/some-id`) համար փորձենք ամենաերկար համընկնում գտնել
     const pathSegments = cleanedPath.split("/").filter(Boolean);
 
     let matchedPath = "";
