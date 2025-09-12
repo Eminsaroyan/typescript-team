@@ -40,6 +40,7 @@ const breadcrumbMap: Record<
     { to: "/equipment", label: "Սարքավորումներ" },
     { label: "Էլ․ տրանսպորտ" },
   ],
+    "/accessories": "Աքսեսուարներ",
 };
 
 export default function Breadcrumb() {
