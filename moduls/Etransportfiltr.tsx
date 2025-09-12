@@ -1,22 +1,12 @@
 import { useState } from "react";
 
-interface Equipment {
-    id: string;
-    anun: string;
-    nkar: string;
-    gin: number;
-    text?: string;
-    aparik?: string;
-}
+
 
 export default function Etransportfiltr() {
     const [isOpen, setIsOpen] = useState<boolean>(true);
 
-    const [equipmentData, setEquipmentData] = useState<Equipment[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-
     return (
-        <div>
+       <div>
             <h1 className="w-[100] mt-[20px] border-t border-t-[#ebedef]"></h1>
             <div className="mt-[20px] max-w-[1230px] mx-auto flex bg-white py-6">
                 <div className="mr-[10px]">
