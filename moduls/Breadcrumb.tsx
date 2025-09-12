@@ -46,16 +46,21 @@ const breadcrumbMap: Record<
         { to: "/accessories", label: "Աքսեսուարներ" },
         { label: "Սմարթ ժամացույցներ" },
     ],
-      "/audio": [
-    { to: "/", label: "Գլխավոր" },
-    { to: "/accessories", label: "Աքսեսուարներ" },
-    { label: "Աուդիո" },
-  ],
+    "/audio": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/accessories", label: "Աքսեսուարներ" },
+        { label: "Աուդիո" },
+    ],
     "/storage": [
-    { to: "/", label: "Գլխավոր" },
-    { to: "/accessories", label: "Աքսեսուարներ" },
-    { label: "Կրիչներ" },
-  ],
+        { to: "/", label: "Գլխավոր" },
+        { to: "/accessories", label: "Աքսեսուարներ" },
+        { label: "Կրիչներ" },
+    ],
+    "/connectivity": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/accessories", label: "Աքսեսուարներ" },
+        { label: "Միացումներ" },
+    ],
 };
 
 export default function Breadcrumb() {
@@ -97,7 +102,7 @@ export default function Breadcrumb() {
 
     const pathSegments = cleanedPath.split("/").filter(Boolean);
 
-    let matchedPath  = "";
+    let matchedPath = "";
     let bestMatch = null;
 
     for (let i = 1; i <= pathSegments.length; i++) {

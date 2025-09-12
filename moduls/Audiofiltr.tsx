@@ -3,7 +3,6 @@ import Navbaj from "./Navbaj-apranqner";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
 
-// 🔹 Audio ինտերֆեյս Firestore-ից եկող տվյալների համար
 interface AudioItem {
   id: string;
   anun: string;
