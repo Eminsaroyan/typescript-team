@@ -28,6 +28,7 @@ import Audio from "../moduls/Audio"
 import Storage from "../moduls/Sorage"
 import Conect from "../moduls/Connectivity"
 import Other from "../moduls/Other"
+import Teamhavelvacner from "../moduls/Teamhavelvacner"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -98,6 +99,7 @@ const App: React.FC = () => {
         <Route path="/Storage" element={<PrivateRoute><Storage /></PrivateRoute>} />
         <Route path="/connectivity" element={<PrivateRoute><Conect /></PrivateRoute>} />
         <Route path="/Other" element={<PrivateRoute><Other /></PrivateRoute>} />
+        <Route path="/Teamhavelvacner" element={<PrivateRoute><Teamhavelvacner /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />

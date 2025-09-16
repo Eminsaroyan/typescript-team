@@ -3,7 +3,6 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "./firebase";
 import Navbaj from "./Navbaj-apranqner";
 
-// 📌 Տիպ ռոութերի համար
 interface RouterItem {
   id: string;
   anun: string;
