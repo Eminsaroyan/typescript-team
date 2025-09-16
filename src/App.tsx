@@ -32,6 +32,7 @@ import Teamhavelvacner from "../moduls/Teamhavelvacner"
 import Teamtv from "../moduls/Teamtv"
 import Myteam from "../moduls/Myteam"
 import Teampay from "../moduls/Teampay"
+import Teamenergy from "../moduls/Teamenergy"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -106,6 +107,7 @@ const App: React.FC = () => {
         <Route path="/Teamtv" element={<PrivateRoute><Teamtv /></PrivateRoute>} />
         <Route path="/Myteam" element={<PrivateRoute><Myteam /></PrivateRoute>} />
         <Route path="/Teampay" element={<PrivateRoute><Teampay /></PrivateRoute>} />
+        <Route path="/Teamenergy" element={<PrivateRoute><Teamenergy /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
