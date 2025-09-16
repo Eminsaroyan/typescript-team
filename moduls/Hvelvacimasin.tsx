@@ -4,7 +4,7 @@ import { db } from "./firebase";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation"; 
+import "swiper/css/navigation";
 
 interface HavelvacimasinProps {
   collectionName: string;
@@ -46,7 +46,7 @@ export default function Havelvacimasin({ collectionName, documentId }: Havelvaci
   const { images = [], description, features = [] } = data;
 
   return (
-    <div className="max-w-[1250px] px-[200px] mx-auto mb-[50px] flex flex-col gap-[20px]">
+    <div className="max-w-[1250px] pl-[200px] pr-[200px] mx-auto mb-[50px] flex flex-col gap-[20px]">
       <div className="flex gap-[30px]">
         <p className="text-[25px] font-team">iOS</p>
         <p className="text-[25px] font-team">Android</p>
@@ -57,16 +57,17 @@ export default function Havelvacimasin({ collectionName, documentId }: Havelvaci
           modules={[Navigation]}
           spaceBetween={20}
           slidesPerView={4}
-          navigation
-          loop
-          className="w-[500px] mx-auto"
+          slidesPerGroup={1}
+          navigation={true}
+          loop={true}
+          className="w-full w-[500px] mx-auto"
         >
           {images.map((url, idx) => (
             <SwiperSlide key={idx}>
               <img
                 src={url}
                 alt={`slide-${idx}`}
-                className="w-full h-auto rounded-[10px]"
+                className="w-full h-auto"
               />
             </SwiperSlide>
           ))}
@@ -84,19 +85,16 @@ export default function Havelvacimasin({ collectionName, documentId }: Havelvaci
         </div>
       )}
 
-      {description && (
-        <p className="max-w-[750px] text-[16px] text-[#666e75] leading-[1.6]">
-          {description}
-        </p>
-      )}
+      <p className="max-w-[750px] text-[16px] text-[#666e75] leading-[1.6]">
+        {description}
+      </p>
 
-      {features.length > 0 && (
-        <ul className="list-disc pl-[20px] text-[16px] text-[#666e75] leading-[2]">
-          {features.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-      )}
+      <ul className="list-disc pl-[20px] text-[16px] text-[#666e75] leading-[2]">
+        {features.map((item, idx) => (
+          <li key={idx}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
+
