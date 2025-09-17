@@ -66,6 +66,7 @@ const breadcrumbMap: Record<
         { to: "/accessories", label: "Աքսեսուարներ" },
         { label: "Այլ" },
     ],
+
 };
 
 export default function Breadcrumb() {
