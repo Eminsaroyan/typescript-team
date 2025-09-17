@@ -23,8 +23,11 @@ const breadcrumbMap: Record<
     "/tackuyt": "Տեղեկատվություն > Ծածկույթ",
     "/internet-tsakuyt": "Տեղեկատվություն > Team ինտերնետի հասանելիության ծածկույթ",
     "/ogtagorci-pastatuxte": "Տեղեկատվություն > Օգտակար փաստաթղթեր",
+    "/gorcnqer-matakararner": "Գնումներ",
     "/bjjnayin-tsakuyt": "Տեղեկատվություն > Բջջային ցանցի ծածկույթ",
     "/aparik": "Տեղեկատվություն > Ապառիկ վաճառքի պայմաններ",
+    "/gordznker": "Գործընկերներ",
+    "/vacharner": "Վաճառքներ",
     "/equipment/audio": [
         { to: "/", label: "Գլխավոր" },
         { to: "/equipment", label: "Սարքավորումներ" },
