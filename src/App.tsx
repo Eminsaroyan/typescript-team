@@ -37,6 +37,7 @@ import Mermasin from "../moduls/Mermasin"
 import Museum from "../moduls/Museum"
 import Norutyunner from "../moduls/Norutyunner"
 import Ashxatanq from "../moduls/Ashxatanq"
+import Ethics from "../moduls/Ethics"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -116,6 +117,7 @@ const App: React.FC = () => {
         <Route path="/Museum" element={<PrivateRoute><Museum /></PrivateRoute>} />
         <Route path="/Norutyunner" element={<PrivateRoute><Norutyunner /></PrivateRoute>} />
         <Route path="/Ashxatanq" element={<PrivateRoute><Ashxatanq /></PrivateRoute>} />
+        <Route path="/Ethics" element={<PrivateRoute><Ethics /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
