@@ -49,6 +49,7 @@ import Arakum from "../moduls/Arakum"
 import Vacharqi from "../moduls/Vacharqi-kentronner"
 import Tackuyt from "../moduls/Tackuyt"
 import Bjj from "../moduls/Bjjnayin-tsakuyt"
+import Internet from "../moduls/Internet-tsakuyt"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -140,6 +141,7 @@ const App: React.FC = () => {
         <Route path="/Vacharqi-kentronner" element={<PrivateRoute><Vacharqi /></PrivateRoute>} />
         <Route path="/Tackuyt" element={<PrivateRoute><Tackuyt /></PrivateRoute>} />
         <Route path="/Bjjnayin-tsakuyt" element={<PrivateRoute><Bjj /></PrivateRoute>} />
+        <Route path="/Internet-tsakuyt" element={<PrivateRoute><Internet /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
