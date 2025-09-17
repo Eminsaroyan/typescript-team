@@ -11,6 +11,7 @@ const breadcrumbMap: Record<
     "/smartphones": "Սմարթֆոններ",
     "/norutyunner": "Ընկերության մասին > Նորություններ",
     "/offers": "Ակցիաներ",
+    "/ashxatanq": "Ընկերության մասին > Աշխատանք Տելեկոմ Արմենիայում",
     "/equipment/audio": [
         { to: "/", label: "Գլխավոր" },
         { to: "/equipment", label: "Սարքավորումներ" },
