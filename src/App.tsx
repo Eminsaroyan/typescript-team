@@ -35,6 +35,7 @@ import Teampay from "../moduls/Teampay"
 import Teamenergy from "../moduls/Teamenergy"
 import Mermasin from "../moduls/Mermasin"
 import Museum from "../moduls/Museum"
+import Norutyunner from "../moduls/Norutyunner"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -112,6 +113,7 @@ const App: React.FC = () => {
         <Route path="/Teamenergy" element={<PrivateRoute><Teamenergy /></PrivateRoute>} />
         <Route path="/Mermasin" element={<PrivateRoute><Mermasin /></PrivateRoute>} />
         <Route path="/Museum" element={<PrivateRoute><Museum /></PrivateRoute>} />
+        <Route path="/Norutyunner" element={<PrivateRoute><Norutyunner /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
