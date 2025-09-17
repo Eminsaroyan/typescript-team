@@ -28,6 +28,7 @@ const breadcrumbMap: Record<
     "/aparik": "Տեղեկատվություն > Ապառիկ վաճառքի պայմաններ",
     "/gordznker": "Գործընկերներ",
     "/vacharner": "Վաճառքներ",
+    "/gaxtniutyun": "Տեղեկատվություն > Գաղտնիության քաղաքականություն",
     "/equipment/audio": [
         { to: "/", label: "Գլխավոր" },
         { to: "/equipment", label: "Սարքավորումներ" },

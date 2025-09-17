@@ -54,6 +54,7 @@ import Pastatuxt from "../moduls/Ogtagorci-pastatuxte"
 import Gorcarqner from "../moduls/Gorcnqer-matakararner"
 import Gordznker from "../moduls/Gordznker"
 import Vacharner from "../moduls/Vacharner"
+import Gaxtniutyun from "../moduls/Gaxtniutyun"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -150,6 +151,7 @@ const App: React.FC = () => {
         <Route path="/Gorcnqer-matakararner" element={<PrivateRoute><Gorcarqner /></PrivateRoute>} />
         <Route path="/Gordznker" element={<PrivateRoute><Gordznker /></PrivateRoute>} />
         <Route path="/Vacharner" element={<PrivateRoute><Vacharner /></PrivateRoute>} />
+        <Route path="/Gaxtniutyun" element={<PrivateRoute><Gaxtniutyun /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
