@@ -29,6 +29,7 @@ const breadcrumbMap: Record<
     "/gordznker": "Գործընկերներ",
     "/vacharner": "Վաճառքներ",
     "/gaxtniutyun": "Տեղեկատվություն > Գաղտնիության քաղաքականություն",
+    "/marzeri-koder": "Տեղեկատվություն > ՀՀ մարզերի կոդեր",
     "/equipment/audio": [
         { to: "/", label: "Գլխավոր" },
         { to: "/equipment", label: "Սարքավորումներ" },
