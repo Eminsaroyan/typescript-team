@@ -42,6 +42,7 @@ import Zargacum from "../moduls/Zargacum"
 import Bazhneter from "../moduls/Bazhneter"
 import Hashvetvutyunner from "../moduls/Hashvetvutyunner"
 import Paymaner from "../moduls/Paymaner"
+import Anvtangutyun from "../moduls/Anvtangutyun"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -126,6 +127,7 @@ const App: React.FC = () => {
         <Route path="/Bazhneter" element={<PrivateRoute><Bazhneter /></PrivateRoute>} />
         <Route path="/Hashvetvutyunner" element={<PrivateRoute><Hashvetvutyunner /></PrivateRoute>} />
         <Route path="/Paymaner" element={<PrivateRoute><Paymaner /></PrivateRoute>} />
+        <Route path="/Anvtangutyun" element={<PrivateRoute><Anvtangutyun /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
