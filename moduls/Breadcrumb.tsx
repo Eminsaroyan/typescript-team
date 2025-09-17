@@ -17,6 +17,7 @@ const breadcrumbMap: Record<
     "/zargacum": "Ընկերության մասին > Կայուն զարգացում",
     "/paymaner": "Տեղեկատվություն > Ընդհանուր դրույթներ և պայմաններ",
     "/anvtangutyun": "Տեղեկատվություն > Անվտանգություն",
+    "/eshoppaymaner": "Տեղեկատվություն > E-shop պայմաններ",
     "/equipment/audio": [
         { to: "/", label: "Գլխավոր" },
         { to: "/equipment", label: "Սարքավորումներ" },
