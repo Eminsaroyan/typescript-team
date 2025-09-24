@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function Fut() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 766);
+  const [isMedium, setIsMedium] = useState(
+    window.innerWidth > 766 && window.innerWidth <= 780
+  );
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 766);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 766);
+      setIsMedium(window.innerWidth > 766 && window.innerWidth <= 780);
+    };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -19,14 +25,19 @@ export default function Fut() {
     <div>
       <div
         className={`bg-[#01415f] text-[#ffffff] pt-[30px] pb-[100px] 
-        ${isMobile ? "flex flex-col " : "grid grid-cols-4 gap-[40px] px-[80px]"}`}
+        ${isMobile
+            ? "flex flex-col justify-center "
+            : isMedium
+              ? "flex flex-col gap-[10px] px-[40px]"
+              : " grid grid-cols-4 gap-[40px] px-[80px]"
+              
+          }`}
       >
         <img
           src="https://www.telecomarmenia.am/img/logo-light.svg?v=1"
           alt="Logo"
+          className="w-[50%] mb-[20px]"
         />
-
-
         <div className="leading-[32px] flex flex-col min-w-[180px]">
           {isMobile ? (
             <>
@@ -144,6 +155,8 @@ export default function Fut() {
           )}
         </div>
       </div>
+
+
       <div className="flex justify-center bg-[#022739] text-[#ffffff] pt-[20px] pb-[20px]">
         <p>Team © 2025</p>
       </div>

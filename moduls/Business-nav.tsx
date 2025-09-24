@@ -2,16 +2,15 @@ import { Link } from "react-router-dom";
 
 export default function Biznesnav() {
     return (
-        <nav className="flex items-center max-w-[1400px] mx-auto pl-[200px] pr-[130px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
+        <nav className="flex justify-center mx-auto pr-[130px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
             <img
                 src="https://www.telecomarmenia.am/img/logo.svg?v=1"
                 alt="Logo"
                 className="cursor-pointer"
             />
 
-            <ul className="list-none flex ml-[30px] gap-x-[48px] items-center">
+            <ul  className="list-none flex ml-[30px] gap-x-[45px]  items-center">
 
-                {/* Dropdown: Սակագներ */}
                 <li className="relative group">
                     <p className="cursor-pointer text-[#2c3843] font-medium text-[16px] px-[12px] py-[8px] transition-colors duration-200 hover:text-blue-600">
                         Սակագներ

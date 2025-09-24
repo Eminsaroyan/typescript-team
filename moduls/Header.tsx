@@ -78,14 +78,14 @@ const NavbarWithHeader: React.FC = () => {
   return (
     <div>
       <Headerone />
-      <nav className="flex items-center  mx-auto pl-[200px] pr-[130px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
+      <nav className="flex justify-center mx-auto pr-[130px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
         <img
           src="https://www.telecomarmenia.am/img/logo.svg?v=1"
           alt="Logo"
           className="cursor-pointer"
         />
 
-        <ul className="list-none flex ml-[30px] gap-x-[35px]  items-center">
+        <ul className="list-none flex ml-[30px] gap-x-[35px] items-center">
           {menus.map(({ title, items }, menuIdx) => (
             <li key={menuIdx} className="relative group">
               <p className="cursor-pointer text-[#2c3843] font-medium text-[16px] px-[12px] py-[1px] transition-colors duration-200 hover:text-blue-600">
