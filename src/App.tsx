@@ -56,6 +56,9 @@ import Gordznker from "../moduls/Gordznker"
 import Vacharner from "../moduls/Vacharner"
 import Gaxtniutyun from "../moduls/Gaxtniutyun"
 import Marz from "../moduls/Marzeri-koder"
+import Mobile from "../moduls/Mobile"
+import Hetvcharyin from "../moduls/Hetvcharyin"
+import Kanxavcharyin from "../moduls/Kanxavcharyin"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -154,6 +157,9 @@ const App: React.FC = () => {
         <Route path="/Vacharner" element={<PrivateRoute><Vacharner /></PrivateRoute>} />
         <Route path="/Gaxtniutyun" element={<PrivateRoute><Gaxtniutyun /></PrivateRoute>} />
         <Route path="/Marzeri-koder" element={<PrivateRoute><Marz /></PrivateRoute>} />
+        <Route path="/mobile" element={<Navigate to="/hetvcharyin" replace />} />
+        <Route path="/hetvcharyin" element={<PrivateRoute><Hetvcharyin /></PrivateRoute>} />
+        <Route path="/kanxavcharyin" element={<PrivateRoute><Kanxavcharyin /></PrivateRoute>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />

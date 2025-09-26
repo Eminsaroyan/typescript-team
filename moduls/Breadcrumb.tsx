@@ -86,6 +86,24 @@ const breadcrumbMap: Record<
         { to: "/accessories", label: "Աքսեսուարներ" },
         { label: "Այլ" },
     ],
+    "/mobile": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներ" },
+        { to: "/mobile", label: "Սակագներ" },
+        { label: "Բջջային կապ" },
+    ],
+    "/hetvcharyin": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներ" },
+        { to: "/mobile", label: "Սակագներ" },
+        { label: "Բջջային կապ" },
+    ],
+    "/kanxavcharyin": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներ" },
+        { to: "/mobile", label: "Սակագներ" },
+        { label: "Բջջային կապ" },
+    ]
 
 };
 
