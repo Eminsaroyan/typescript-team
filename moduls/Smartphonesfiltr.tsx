@@ -3,7 +3,6 @@ import Navbaj from "./Navbaj-apranqner";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "./firebase";
 
-// 🔹 Սմարթֆոնի ինտերֆեյս Firestore-ից եկող տվյալների համար
 interface Smartphone {
   id: string;
   anun: string;

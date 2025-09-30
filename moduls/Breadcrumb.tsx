@@ -88,23 +88,34 @@ const breadcrumbMap: Record<
     ],
     "/mobile": [
         { to: "/", label: "Գլխավոր" },
-        { to: "/", label: "Անհատներ" },
+        { to: "/", label: "Անհատներին" },
         { to: "/mobile", label: "Սակագներ" },
         { label: "Բջջային կապ" },
     ],
     "/hetvcharyin": [
         { to: "/", label: "Գլխավոր" },
-        { to: "/", label: "Անհատներ" },
+        { to: "/", label: "Անհատներին" },
         { to: "/mobile", label: "Սակագներ" },
         { label: "Բջջային կապ" },
     ],
-    "/kanxavcharyin": [
+    "/smartfonihamr": [
         { to: "/", label: "Գլխավոր" },
-        { to: "/", label: "Անհատներ" },
-        { to: "/mobile", label: "Սակագներ" },
-        { label: "Բջջային կապ" },
+        { to: "/", label: "Անհատներին" },
+        { to: "/smartfonihamr", label: "Ինտերնետ" },
+        { label: "Սմարթֆոնի համար" },
+    ],
+    "/internethetvcharyin": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներին" },
+        { to: "/internethetvcharyin", label: "Ինտերնետ" },
+        { label: "Սմարթֆոնի համար" },
+    ],
+    "/Internetkanxavcharyin": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներին" },
+        { to: "/Internetkanxavcharyin", label: "Ինտերնետ" },
+        { label: "Սմարթֆոնի համար" },
     ]
-
 };
 
 export default function Breadcrumb() {
