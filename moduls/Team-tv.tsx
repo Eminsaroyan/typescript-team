@@ -2,6 +2,7 @@ import Tvmek from "./Team-tvmasmek"
 import Fut from "./Fut"
 import Teamtvgrancum from "./Team-tvgrancum"
 import Teamtvereq from "./Team-tvereq"
+import Teamtvchors from "./Team-tvchors"
 
 export default function Tv (){
     return(
@@ -9,6 +10,7 @@ export default function Tv (){
         <Tvmek />
         <Teamtvgrancum />
         <Teamtvereq />
+        <Teamtvchors />
         <Fut /> 
         </>
     )

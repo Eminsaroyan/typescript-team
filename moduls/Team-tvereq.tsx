@@ -1,7 +1,7 @@
 export default function Teamtvereq() {
     return (
-        <div className="flex  md:flex-row items-center md:items-start py-[60px] bg-[#01425e] mb-[50px]">
-            {/* Նկար */}
+        <div className="flex  md:flex-row items-center md:items-start py-[60px] bg-[#01425e]">
+
             <div className="w-full md:w-[55%] flex justify-center md:justify-start mb-8 md:mb-0">
                 <img
                     src="https://www.telecomarmenia.am/file_manager/teamtv/Team%20tv%20landing.jpg"
