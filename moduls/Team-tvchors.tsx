@@ -3,10 +3,9 @@ import { FaTv } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
 
 export default function Teamtvchors() {
-    const [activeTab, setActiveTab] = useState<string | null>(null); // հիմնական կոճակ
-    const [activeSubTab, setActiveSubTab] = useState<string | null>(null); // ենթակոճակ
+    const [activeTab, setActiveTab] = useState<string | null>(null); 
+    const [activeSubTab, setActiveSubTab] = useState<string | null>(null); 
 
-    // toggle ենթակոճակների համար
     const toggleSubTab = (tab: string) => {
         setActiveSubTab(activeSubTab === tab ? null : tab);
     };
@@ -31,10 +30,10 @@ export default function Teamtvchors() {
                             setActiveTab("mobile");
                             setActiveSubTab(null);
                         }}
-                        className={`w-[50%] flex items-center justify-center border-none gap-[20px] py-[10px] transition duration-300 text-[24px] rounded-md
+                        className={`w-[50%] flex items-center justify-center border-none cursor-pointer gap-[20px] py-[10px] transition duration-300 text-[24px] rounded-md
     ${activeTab === "mobile"
                                 ? "bg-[#01425e] text-[#fff] shadow-[0_4px_6px_-1px_rgba(0.3,0.3,0.3,0.3)]"
-                                : "bg-[#fff] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
+                                : "bg-[#fff] text-[#01425e] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
                             }`}
                     >
                         <FaTv className="w-[50px] h-[90px]" />
@@ -46,10 +45,10 @@ export default function Teamtvchors() {
                             setActiveTab("smart");
                             setActiveSubTab(null);
                         }}
-                        className={`w-[50%] flex items-center gap-2 px-[110px] border-none py-[20px] transition duration-300 text-[24px] rounded-md
+                        className={`w-[50%] flex items-center gap-2 px-[110px] cursor-pointer border-none py-[20px] transition duration-300 text-[24px] rounded-md
     ${activeTab === "smart"
                                 ? "bg-[#01425e] text-[#fff] shadow-[0_4px_6px_-1px_rgba(0.3,0.3,0.3,0.3)]"
-                                : "bg-[#fff] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
+                                : "bg-[#fff] text-[#01425e] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
                             }`}
                     >
                         <FaMobileAlt className="w-[50px] h-[60px]" />
