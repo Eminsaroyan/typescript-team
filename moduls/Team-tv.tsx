@@ -3,6 +3,7 @@ import Fut from "./Fut"
 import Teamtvgrancum from "./Team-tvgrancum"
 import Teamtvereq from "./Team-tvereq"
 import Teamtvchors from "./Team-tvchors"
+import Teamtvhing from "./Team-tvhing"
 
 export default function Tv (){
     return(
@@ -11,6 +12,7 @@ export default function Tv (){
         <Teamtvgrancum />
         <Teamtvereq />
         <Teamtvchors />
+        <Teamtvhing />
         <Fut /> 
         </>
     )
