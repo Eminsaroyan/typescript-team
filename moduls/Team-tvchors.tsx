@@ -31,9 +31,9 @@ export default function Teamtvchors() {
                             setActiveTab("mobile");
                             setActiveSubTab(null);
                         }}
-                        className={`w-[50%] flex items-center justify-center gap-[20px] py-[10px] transition duration-300 text-[24px] rounded-md
+                        className={`w-[50%] flex items-center justify-center border-none gap-[20px] py-[10px] transition duration-300 text-[24px] rounded-md
     ${activeTab === "mobile"
-                                ? "bg-[#01425e] text-[#fff] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
+                                ? "bg-[#01425e] text-[#fff] shadow-[0_4px_6px_-1px_rgba(0.3,0.3,0.3,0.3)]"
                                 : "bg-[#fff] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
                             }`}
                     >
@@ -46,9 +46,9 @@ export default function Teamtvchors() {
                             setActiveTab("smart");
                             setActiveSubTab(null);
                         }}
-                        className={`w-[50%] flex items-center gap-2 px-[110px] py-[20px] transition duration-300 text-[24px] rounded-md
+                        className={`w-[50%] flex items-center gap-2 px-[110px] border-none py-[20px] transition duration-300 text-[24px] rounded-md
     ${activeTab === "smart"
-                                ? "bg-[#01425e] text-[#fff] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
+                                ? "bg-[#01425e] text-[#fff] shadow-[0_4px_6px_-1px_rgba(0.3,0.3,0.3,0.3)]"
                                 : "bg-[#fff] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]"
                             }`}
                     >
