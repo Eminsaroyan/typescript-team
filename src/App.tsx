@@ -64,6 +64,7 @@ import Tv from "../moduls/Team-tv"
 import Faq from "../moduls/Faq"
 import Businessfaq from "../moduls/Businessfaq"
 import Bizneshetvcharyin from "../moduls/Bizneshetvcharyin"
+import Smartbizneshetvcharayin from "../moduls/Smartbizneshetvcharayin"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -101,7 +102,8 @@ const hideHeaderOnPaths: string[] = [
   "/other",
   "/businessfaq",
   "/mobilebiznes",
-  "/bizneshetvcharyin"
+  "/bizneshetvcharyin",
+  "/smartbizneshetvcharayin"
 ];
 
 const App: React.FC = () => {
@@ -177,6 +179,8 @@ const App: React.FC = () => {
         <Route path="/businessfaq" element={<PrivateRoute><Businessfaq /></PrivateRoute>} />
         <Route path="/mobilebiznes" element={<Navigate to="/bizneshetvcharyin" replace />} />
         <Route path="/Bizneshetvcharyin" element={<PrivateRoute><Bizneshetvcharyin /></PrivateRoute>} />
+        <Route path="/smartfonihamrbiznes" element={<Navigate to="/smartbizneshetvcharayin" replace />} />
+        <Route path="/smartbizneshetvcharayin" element={<PrivateRoute><Smartbizneshetvcharayin /></PrivateRoute>} />
         
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />

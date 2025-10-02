@@ -124,15 +124,21 @@ const breadcrumbMap: Record<
     ],
     "/businessfaq": [
         { to: "/", label: "Գլխավոր" },
-        { to: "/", label: "Անհատներին" },
+        { to: "/business", label: "Բիզնես" },
         { to: "/businessfaq", label: "Օգնություն" },
         { label: "Հաճախ տրվող հարցեր" },
     ],
     "/bizneshetvcharyin": [
         { to: "/", label: "Գլխավոր" },
-        { to: "/", label: "Անհատներին" },
+        { to: "/business", label: "Բիզնես" },
         { to: "/bizneshetvcharyin", label: "Սակագներ" },
         { label: "Բջջային կապ" },
+    ],
+    "/smartbizneshetvcharayin": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/business", label: "Բիզնես" },
+        { to: "/smartbizneshetvcharayin", label: "Ինտերնետ" },
+        { label: "Սմարթֆոնի համար" },
     ],
 };
 
