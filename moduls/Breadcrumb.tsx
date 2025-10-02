@@ -140,6 +140,12 @@ const breadcrumbMap: Record<
         { to: "/smartbizneshetvcharayin", label: "Ինտերնետ" },
         { label: "Սմարթֆոնի համար" },
     ],
+    "/biznescarayutynmob": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/business", label: "Բիզնես" },
+        { to: "/biznescarayutynmob", label: " Ծառայություններ" },
+        { label: "Բջջային կապ" },
+    ],
 };
 
 export default function Breadcrumb() {
