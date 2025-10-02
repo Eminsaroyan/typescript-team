@@ -1,6 +1,7 @@
 import Headerone from "./Headerone";
 import Biznesnav from "./Business-nav";
 import Sharemek from "./Share-and-winmek";
+import Shareerku from "./Share-and-winerku";
 
 export default function Share() {
     return (
@@ -8,6 +9,8 @@ export default function Share() {
             <Headerone />
             <Biznesnav />
             <Sharemek />
+            <Shareerku />
+
         </>
     )
 }
