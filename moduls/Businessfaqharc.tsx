@@ -10,14 +10,6 @@ const faqSections = [
     ],
   },
   {
-    id: 2,
-    label: "Team Բոնուս",
-    questions: [
-      { id: 21, question: "Բոնուսային կետերի կանոններ", answer: "Բոնուսային կետերը начисляются при..." },
-      { id: 22, question: "Ինչպես ստուգել բալանսը", answer: "Բալանսը ստուգելու համար կարող եք ..." },
-    ],
-  },
-  {
     id: 3,
     label: "Ինտերնետ",
     questions: [
@@ -34,14 +26,6 @@ const faqSections = [
     ],
   },
   {
-    id: 5,
-    label: "Վճարումներ",
-    questions: [
-      { id: 51, question: "Ինչպես կատարել օնլայն վճարում", answer: "Մուտք գործեք անձնական գրասենյակ և ընտրեք վճարման եղանակը։" },
-      { id: 52, question: "Ինչպես միացնել ավտոմատ վճարում", answer: "Կարող եք կապել բանկային քարտը և ակտիվացնել auto-pay ծառայությունը։" },
-    ],
-  },
-  {
     id: 6,
     label: "Անձնական գրասենյակ",
     questions: [
@@ -51,7 +35,7 @@ const faqSections = [
   },
 ];
 
-export default function FAQAccordion() {
+export default function Businessfaqharc() {
   const [activeSection, setActiveSection] = useState<number | null>(faqSections[0].id);
   const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 

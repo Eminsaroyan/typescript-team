@@ -6,7 +6,7 @@ interface Sakaginlink {
     label: string,
 }
 
-export default function Faqlink() {
+export default function Businessfaqlink() {
     const equipmentList: Sakaginlink[] = [
         {
             to: "/faq",
@@ -19,14 +19,9 @@ export default function Faqlink() {
             label: "Սարքերի կարգավորումներ",
         },
         {
-            to: "/bajanordispasrkum",
-            img: "https://www.telecomarmenia.am/files/icons/1/16510717960323/45x45.png",
-            label: "Բաժանորդային սպասարկում",
-        },
-        {
             to: "/ogtakarhamar",
             img: "https://www.telecomarmenia.am/files/icons/1/16510713241559/45x45.png",
-            label: "USSD հրահանգներ և օգտակար համարներ",
+            label: "Օգտակար համարներ",
         },  
     ];
 

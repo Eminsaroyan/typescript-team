@@ -121,7 +121,13 @@ const breadcrumbMap: Record<
         { to: "/", label: "Անհատներին" },
         { to: "/faq", label: "Օգնություն" },
         { label: "Հաճախ տրվող հարցեր" },
-    ]
+    ],
+    "/businessfaq": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներին" },
+        { to: "/businessfaq", label: "Օգնություն" },
+        { label: "Հաճախ տրվող հարցեր" },
+    ],
 };
 
 export default function Breadcrumb() {

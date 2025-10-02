@@ -141,7 +141,7 @@ export default function Biznesnav() {
                     </p>
                     <ul className="absolute top-full left-0 w-[300px] bg-[#f8f9f9] list-none rounded-b-[12px] shadow-xl z-50 hidden group-hover:block transition-all duration-300">
                         {[
-                            { name: "Հաճախ տրվող հարցեր", to: "/faq" },
+                            { name: "Հաճախ տրվող հարցեր", to: "/businessfaq" },
                             { name: "Սարքերի կարգավորումներ", to: "/device-settings" },
                             { name: "Բաժանորդային սպասարկում", to: "/subscriber-service" },
                             { name: "USSD հրահանգներ և օգտակար համարներ", to: "/ussd-instructions" },
