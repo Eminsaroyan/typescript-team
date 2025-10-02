@@ -45,7 +45,7 @@ export default function Paymanermas() {
     fetchTabs();
   }, []);
 
-  // 🔽 Արխիվի բացման transition
+
   useEffect(() => {
     if (showArchiveList) {
       setMaxHeight(archiveRef.current?.scrollHeight + "px" || "0px");

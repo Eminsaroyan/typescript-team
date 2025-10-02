@@ -2,26 +2,26 @@ import { FaStar } from "react-icons/fa";
 
 export default function TeamTVSection() {
     return (
-        <div className="max-w-[1260px] mx-auto px-[20px] py-[60px]">
+        <div className="max-w-[1260px] mx-auto px-[20px]">
 
             <div className="flex flex-col items-center justify-between gap-[48px]">
                 <h1 className="text-[#01425e] text-[74px] font-[200] mb-[48px] text-center"
                     style={{ fontFamily: "'Team-Regular', 'Helvetica', 'Arial', sans-serif" }} >
                     Դիտիր TV որտեղ ցանկանաս </h1>
 
-                <div className="flex justify-around">
-                    <div className="flex flex-col items-center  gap-[32px] w-[600px]">
-                        <p className="text-[#666666] text-[20px] leading-[28px] mb-[20px] text-cente">
+                <div className="flex justify-between">
+                    <div className="flex flex-col  text-start gap-[32px] w-[600px]">
+                        <p className="text-[#666666] text-[20px]  text-start">
                             Ներբեռնի՛ր ու փորձի՛ր նոր{" "}
                             <span className="text-[#01425e] font-semibold">teamTV</span>
                         </p>
 
                         <div className="flex">
-                            <div className="flex items-center  justify-center  bg-[#f9f9f9] px-[20px] py-[12px]">
+                            <div className="flex justify-center  bg-[#f9f9f9] px-[20px] py-[12px]">
                                 <img
                                     src="https://www.telecomarmenia.am/file_manager/teamtv/teamTv_logo_512x512.jpg"
                                     alt="Դիտիր TV որտեղ ցանկանաս"
-                                    className="w-[200px] rounded-[15px]"
+                                    className="w-[300px] rounded-[15px]"
                                 />
                             </div>
                             <div className="flex flex-col">
@@ -57,7 +57,7 @@ export default function TeamTVSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center w-[600px]">
+                    <div className="flex w-[50%]">
                         <img
                             src="https://www.telecomarmenia.am/file_manager/TV_Screens.png"
                             alt="TeamTV Phones"

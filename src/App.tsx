@@ -61,6 +61,7 @@ import Kanxavcharyin from "../moduls/Kanxavcharyin"
 import Internethetvcharyin from "../moduls/Internethetvcharyin"
 import Internetkanxavcharyin from "../moduls/Internetkanxavcharyin"
 import Tv from "../moduls/Team-tv"
+import Faq from "../moduls/Faq"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -167,6 +168,7 @@ const App: React.FC = () => {
         <Route path="/internethetvcharyin" element={<PrivateRoute><Internethetvcharyin /></PrivateRoute>} />
         <Route path="/internetkanxavcharyin" element={<PrivateRoute><Internetkanxavcharyin /></PrivateRoute>} />
         <Route path="/Team-tv" element={<PrivateRoute><Tv /></PrivateRoute>} />
+        <Route path="/faq" element={<PrivateRoute><Faq /></PrivateRoute>} />
         
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />

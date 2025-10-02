@@ -115,6 +115,12 @@ const breadcrumbMap: Record<
         { to: "/", label: "Անհատներին" },
         { to: "/Internetkanxavcharyin", label: "Ինտերնետ" },
         { label: "Սմարթֆոնի համար" },
+    ],
+    "/faq": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներին" },
+        { to: "/faq", label: "Օգնություն" },
+        { label: "Հաճախ տրվող հարցեր" },
     ]
 };
 
