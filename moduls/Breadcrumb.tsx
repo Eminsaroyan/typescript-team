@@ -128,6 +128,12 @@ const breadcrumbMap: Record<
         { to: "/businessfaq", label: "Օգնություն" },
         { label: "Հաճախ տրվող հարցեր" },
     ],
+    "/bizneshetvcharyin": [
+        { to: "/", label: "Գլխավոր" },
+        { to: "/", label: "Անհատներին" },
+        { to: "/bizneshetvcharyin", label: "Սակագներ" },
+        { label: "Բջջային կապ" },
+    ],
 };
 
 export default function Breadcrumb() {
