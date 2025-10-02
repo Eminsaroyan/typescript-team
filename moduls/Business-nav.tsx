@@ -66,10 +66,9 @@ export default function Biznesnav() {
                     </p>
                     <ul className="absolute top-full left-0 w-[250px] list-none bg-[#f8f9f9] rounded-b-[12px] shadow-xl z-50 hidden group-hover:block transition-all duration-300">
                         {[
-                            { name: "TeamTV", to: "/team-tv" },
-                            { name: "Վճարում և համալրում", to: "/payments" },
-                            { name: "Զվարճանք", to: "/entertainment" },
-                            { name: "Զանգեր և անվտանգություն", to: "/calls-security" },
+                            { name: "Բջջային կապ", to: "/biznescarayutynmob" },
+                            { name: "Ֆիքսված կապ", to: "/biznesfiqkap" },
+                            { name: "TeamTV", to: "/biznestemtv" },
                         ].map(({ name, to }, idx) => (
                             <li
                                 key={idx}
@@ -94,7 +93,6 @@ export default function Biznesnav() {
                             { name: "Ռոումինգ", to: "/roaming" },
                             { name: "Միջազգային կապ", to: "/international-calls" },
                             { name: "Օգտակար տեղեկատվություն", to: "/useful-info" },
-                            { name: "Ծառայություններ", to: "/services" },
                         ].map(({ name, to }, idx) => (
                             <li
                                 key={idx}
@@ -116,9 +114,12 @@ export default function Biznesnav() {
                     </p>
                     <ul className="absolute top-full left-0 w-[220px] list-none bg-[#f8f9f9] rounded-b-[12px] shadow-xl z-50 hidden group-hover:block transition-all duration-300">
                         {[
-                            { name: "E-shop", to: "/eshop" },
-                            { name: "Առցանց ապառիկ", to: "/online-credit" },
-                            { name: "Բաժանորդագրություն", to: "/subscription" },
+                            { name: "SMS-ինֆո", to: "/biznessmsinfo" },
+                            { name: "Ինտելեկտուալ կապ", to: "/intelektual-kap" },
+                            { name: "Կորպորատիվ ցանցեր", to: "/korportiv-cancer" },
+                            { name: "М2М և մոնիթորինգ", to: "/merkumbiznes" },
+                            { name: "Հոսթինգ", to: "/hostinbiznes" },
+                            { name: "Ծախսերի վերահսկում", to: "/verhskumbiznes" },
                         ].map(({ name, to }, idx) => (
                             <li
                                 key={idx}
@@ -143,8 +144,7 @@ export default function Biznesnav() {
                         {[
                             { name: "Հաճախ տրվող հարցեր", to: "/businessfaq" },
                             { name: "Սարքերի կարգավորումներ", to: "/device-settings" },
-                            { name: "Բաժանորդային սպասարկում", to: "/subscriber-service" },
-                            { name: "USSD հրահանգներ և օգտակար համարներ", to: "/ussd-instructions" },
+                            { name: "Օգտակար համարներ", to: "/ogtakar-hamar" },
                         ].map(({ name, to }, idx) => (
                             <li
                                 key={idx}
