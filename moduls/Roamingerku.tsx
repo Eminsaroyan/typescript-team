@@ -1,6 +1,6 @@
 export default function Roamingerku() {
     return (
-        <div className="bg-[#01415f]">
+        <div className="bg-[#01415f] mb-[65px]">
             <div className="mx-auto max-w-[1260px] px-[20px]">
                 <h2 className="text-center text-[#fff] text-[60px] mb-[60px]"
                     style={{ fontFamily: "'Team-Regular', 'Helvetica', 'Arial', 'sans-serif'" }}
