@@ -67,6 +67,7 @@ import Bizneshetvcharyin from "../moduls/Bizneshetvcharyin"
 import Smartbizneshetvcharayin from "../moduls/Smartbizneshetvcharayin"
 import Biznescarayutynmob from "../moduls/Biznescarayutynmob"
 import Biznessmsinfo from "../moduls/Biznessmsinfo"
+import Roaming from "../moduls/Roaming"
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -187,6 +188,7 @@ const App: React.FC = () => {
         <Route path="/smartbizneshetvcharayin" element={<PrivateRoute><Smartbizneshetvcharayin /></PrivateRoute>} />
         <Route path="/Biznescarayutynmob" element={<PrivateRoute><Biznescarayutynmob /></PrivateRoute>} />
         <Route path="/biznessmsinfo" element={<PrivateRoute><Biznessmsinfo /></PrivateRoute>} />
+        <Route path="/Roaming" element={<PrivateRoute><Roaming /></PrivateRoute>} />
         
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
