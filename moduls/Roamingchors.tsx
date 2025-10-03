@@ -13,7 +13,7 @@ export default function Roamingchors() {
                             >
                                 <p className="text-center"
                                     style={{ fontFamily: "'Team-Regular', 'Helvetica', 'Arial', 'sans-serif'" }}
-                                >Հասանելի ուղղությունների և սակագների ամբողջական <span> ցանկ</span></p>
+                                >Հասանելի ուղղությունների և սակագների ամբողջական <span className="underline">ցանկ</span></p>
                             </td>
                         </tr>
                         <tr className="h-[29px]">
@@ -23,7 +23,7 @@ export default function Roamingchors() {
                             </td>
                             <td className="w-[303.194px] h-[99px] bg-[#e6e7e8] text-center align-middle border-b-2"
                                 style={{ borderColor: "#e6e7e8 #01415f white #e6e7e8" }}
-                            ><strong>9</strong> դր/ՄԲ*</td>
+                            ><strong className="text-[20px]">9</strong> դր/ՄԲ*</td>
                         </tr>
                         <tr className="h-[68px]">
                             <td className="w-[302.454px] h-[99px] bg-white text-left align-middle border-b-2"
@@ -31,7 +31,7 @@ export default function Roamingchors() {
                             >Մուտքային զանգեր և ելքային զանգեր դեպի Հայաստան</td>
                             <td className="w-[303.194px] h-[99px] bg-[#e6e7e8] text-center align-middle border-b-2"
                                 style={{ borderColor: "#e6e7e8 #01415f white #e6e7e8" }}>
-                                <strong>150</strong> դր/ր
+                                <strong className="text-[20px]">150</strong> դր/ր
                             </td>
                         </tr>
                         <tr className="h-[68px]">
@@ -45,10 +45,11 @@ export default function Roamingchors() {
                         </tr>
                         <tr className="h-[70px]">
                             <td className="w-[302.454px] h-[99px] bg-white text-left align-middle border-b-2"
-                                style={{ borderColor: "white #01415f #e6e7e8 white" }}>SMS</td>
+                                style={{ borderColor: "white #01415f #e6e7e8 white"  }}
+                            >SMS</td>
                             <td className="w-[303.194px] h-[99px] bg-[#e6e7e8] text-center align-middle border-b-2"
                                 style={{ borderColor: "#e6e7e8 #01415f white #e6e7e8" }}>
-                                <strong>25 </strong>դր
+                                <strong className="text-[20px]">25 </strong>դր
                             </td>
                         </tr>
                         <tr className="h-[70px]">
@@ -56,7 +57,7 @@ export default function Roamingchors() {
                                 style={{ borderColor: "white #01415f #01415f white" }} colSpan={2}>
                                 <p className="font-[100] text-center"
                                     style={{ fontFamily: "'Team-Regular', 'Helvetica', 'Arial', 'sans-serif'" }}
-                                >* Ալբանիա, ԱՄՆ, Արգենտինա, Ավստրալիա, Ավստրիա, Բանգլադեշ, Բելգիա, Բոսնիա և Հերցեգովինա, Բուլղարիա, Գանա, Գերմանիա, Գրենլանդիա, Դանիա, Եգիպտոս, Էստոնիա, Թայլանդ, Թայվան, Իռլանդիա, Իսլանդիա, Իսպանիա, Իտալիա, Իսրայել, Լատվիա, Լեհաստան, Լիխտենշտեյն, Լիտվա, Լյուքսեմբուրգ, Խորվաթիա, Կանադա, Կիպրոս, Կոնգո, Հունաստան, Հունգարիա, Ճապոնիա, Մալազիա, Մալթա, Մակեդոնիա, Մեծ Բրիտանիա, Մեն կղզի, Մյանմար, Մոնտենեգրո, Մոզամբիկ, Նիդեռլանդներ, Նորվեգիա, Նոր Զելանդիա, Շվեդիա, Շվեյցարիա, Չեխիա, Չինաստան, Պորտուգալիա, Ջերսի, Ռումինիա, Սերբիա, Սլովակիա, Սլովենիա, Քաթար, Ֆինլանդիա, Ֆրանսիա ։</p>
+                                >* Ալբանիա, ԱՄՆ, Արգենտինա, Ավստրալիա, Ավստրիա, Բանգլադեշ, Բելգիա, Բոսնիա և Հերցեգովինա, Բուլղարիա, Գանա, Գերմանիա, Գրենլանդիա, Դանիա, Եգիպտոս, Էստոնիա, Թայլանդ, Թայվան, Իռլանդիա, Իսլանդիա, Իսպանիա, Իտալիա, Իսրայել, Լատվիա, Լեհաստան, Լիխտենշտեյն, Լիտվա, Լյուքսեմբուրգ, Խորվաթիա, Կանադա, Կիպրոս, Կոնգո, Հունաստան, Հունգարիա, Ճապոնիա, Մալազիա, Մալթա, Մակեդոնիա, Մեծ Բրիտանիա, Մեն կղզի, Մյանմար, Մոնտենեգրո, Մոզամբիկ, Նիդեռլանդներ, Նորվեգիա, Նոր Զելանդիա, Շվեդիա, Շվեյցարիա, Չեխիա, Չինաստան, Պորտուգալիա, Ջերսի, Ռումինիա, Սերբիա, Սլովակիա, Սլովենիա, Քաթար, Ֆինլանդիա, Ֆրանսիա </p>
                             </td>
                         </tr>
                     </tbody>
