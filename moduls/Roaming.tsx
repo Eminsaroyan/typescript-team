@@ -3,6 +3,7 @@ import Roamingerku from "./Roamingerku"
 import Roamingereq from "./Roamingereq"
 import Roamingchors from "./Roamingchors"
 import Roamingvec from "./Roamingvec"
+import Roamingyot from "./Roamingyot"
 
 export default function (){
     return(
@@ -12,6 +13,7 @@ export default function (){
         <Roamingereq />
         <Roamingchors />
         <Roamingvec />
+        <Roamingyot />
         </>
     )
 }
