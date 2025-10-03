@@ -1,4 +1,4 @@
-export default function Sharechors() {
+export default function Biznessmsinfochors() {
     return (
         <div>
             <h2 className="text-center mb-[60px] mt-[35px] text-[74px]"

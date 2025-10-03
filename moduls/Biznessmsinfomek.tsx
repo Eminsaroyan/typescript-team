@@ -1,4 +1,4 @@
-export default function Sharemek() {
+export default function Biznessmsinfomek() {
     return (
         <div className="flex justify-evenly bg-[#e3ddd2] py-[80px]">
             <iframe

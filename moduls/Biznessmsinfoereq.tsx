@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SmsTabs() {
+export default function Biznessmsinfoereq() {
     const [isLimitationsOpen, setIsLimitationsOpen] = useState(false);
     const [isGeneralOpen, setIsGeneralOpen] = useState(false);
 

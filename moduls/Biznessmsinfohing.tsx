@@ -1,4 +1,4 @@
-export default function Sharehing() {
+export default function Biznessmsinfohing() {
     return (
         <div className="py-[60px] px-[0px]">
             <div className="mx-auto max-w-[1260px] px-[20px] text-center">

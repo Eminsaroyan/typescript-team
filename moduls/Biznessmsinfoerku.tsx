@@ -1,4 +1,4 @@
-export default function Shareerku() {
+export default function Biznessmsinfoerku() {
   return (
     <div className="py-[60px] px-4 bg-[#01425f]">
       {/* Տիտղոս */}
