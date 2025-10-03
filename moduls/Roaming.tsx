@@ -4,6 +4,8 @@ import Roamingereq from "./Roamingereq"
 import Roamingchors from "./Roamingchors"
 import Roamingvec from "./Roamingvec"
 import Roamingyot from "./Roamingyot"
+import Roamingut from "./Roamingut"
+import Fut from "./Fut"
 
 export default function (){
     return(
@@ -14,6 +16,8 @@ export default function (){
         <Roamingchors />
         <Roamingvec />
         <Roamingyot />
+        <Roamingut />
+        <Fut />
         </>
     )
 }

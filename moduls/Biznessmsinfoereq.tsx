@@ -17,7 +17,6 @@ export default function Biznessmsinfoereq() {
             </h2>
 
             <div className="flex lg:flex-row gap-[20px]">
-                {/* Ծառայության սահմանափակումներ */}
                 <div className="flex-1">
                     <div
                         onClick={toggleLimitations}
@@ -54,7 +53,6 @@ export default function Biznessmsinfoereq() {
                     )}
                 </div>
 
-                {/* Ընդհանուր պայմաններ */}
                 <div className="flex-1">
                     <div
                         onClick={toggleGeneral}
