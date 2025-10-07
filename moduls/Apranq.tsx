@@ -41,7 +41,7 @@ export default function Apranq(){
     }, []);
 
     return (
-        <div className="mt-[40px] m-[20px] mb-[20px]">
+        <div className="mx-auto max-w-[1260px] px-[20px]">
             <Swiper
                 modules={[Pagination, Autoplay]}
                 spaceBetween={10}

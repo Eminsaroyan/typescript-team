@@ -14,7 +14,7 @@ export default function Hamar({ id, vernagir, hamar, gin, image }: HamarProps) {
     const handleAddToCart = () => {
         toggleProduct({
             id,
-            name: vernagir,  // store-ում name դաշտ է սպասվում, vernagir-ը փոխանցում ենք որպես name
+            vernagir: vernagir,
             image,
             gin,
         });

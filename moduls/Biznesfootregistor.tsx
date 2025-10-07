@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import type { FormEvent, ChangeEvent } from "react";
 
 type FormData = {
@@ -23,95 +23,115 @@ export default function Biznesfootregistor() {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        // Տվյալները կարող եք ուղարկել API կամ Firebase
         console.log(formData);
         alert("Դիմումը ուղարկվել է");
     };
 
     return (
-        <div className="flex flex-col items-center justify-center bg-[#143046] pt-[60px] text-[#ffffff]">
-            <h1 className="w-[700px] mb-[10px] text-center text-[60px]">Տեղափոխվե՛ք Team Ձեր համարով</h1>
-            <p className="w-[650px] text-center text-[16px] mb-[80px]">
-                Դարձե՛ք Team բաժանորդ, օգտվեք ցանցի առավելություններից` պահելով Ձեր բջջային հեռախոսի համարը:
-            </p>
+        <div className="bg-[linear-gradient(180deg,#041d28_0%,#143046_100%)] text-[#fff]">
+            <div className="mx-auto max-w-[1260px] px-[20px] ">
+                <div className="pt-[72px] pr-[203px] pb-[60px] pl-[203px]">
+                    <h1 className="mb-[10px] uppercase text-center text-[48px]"
+                        style={{ fontFamily: "'Team-Regular', 'Helvetica', 'Arial', 'sans-serif'" }}
+                    >Տեղափոխվե՛ք Team Ձեր համարով</h1>
+                    <p className=" text-center text-[16px] tracking-[0.23px] leading-[24px] mb-[48px] font-[Team-Regular,Helvetica,Arial,sans-serif]"
+                    >
+                        Դարձե՛ք Team բաժանորդ, օգտվեք ցանցի առավելություններից` պահելով Ձեր բջջային <br /> հեռախոսի համարը:
+                    </p>
 
-            <form onSubmit={handleSubmit} className="w-full max-w-[900px]">
-                <div className="grid items-center grid-cols-2 gap-4">
-                    <div className="flex flex-col">
-                        <label htmlFor="transferNumber" className="mb-[12px] text-[13px]">
-                            Տեղափոխվող համար <span className="text-red-500">*</span> (0XXYYYYYY ֆորմատով)
-                        </label>
-                        <input
-                            type="tel"
-                            id="transferNumber"
-                            name="transferNumber"
-                            placeholder="0"
-                            pattern="0[0-9]{8}"
-                            required
-                            value={formData.transferNumber}
-                            onChange={handleChange}
-                            className="pl-[10px] w-[400px] pt-[15px] pb-[15px] border-none mb-[40px] mr-[50px] rounded-[20px]"
-                        />
-                    </div>
+                    <form onSubmit={handleSubmit} className="w-full max-w-[900px] mx-auto">
+                        <div className="grid grid-cols-2 gap-x-[36px] gap-y-[20px]">
+                            <div className="flex flex-col pt-[18px] pr-[18px] pb-[10px] pl-[18px]">
+                                <label
+                                    htmlFor="transferNumber"
+                                    className="h-[15.6px] tracking-[0.15px] mb-[10px] pl-[10px] text-[0.75rem] text-left font-[Team-Regular,Helvetica,Arial,sans-serif]"
+                                >
+                                    Տեղափոխվող համար  (0XXYYYYYY ֆորմատով)*
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="transferNumber"
+                                    name="transferNumber"
+                                    placeholder="0"
+                                    pattern="0[0-9]{8}"
+                                    required
+                                    value={formData.transferNumber}
+                                    onChange={handleChange}
+                                    className="pl-[22px] border border-[#ebedef] rounded-[30px] h-[44px] px-[15px] w-full"
+                                />
+                            </div>
 
-                    <div className="flex flex-col">
-                        <label htmlFor="name" className="mb-[12px] text-[13px]">
-                            Անուն Ազգանուն <span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Անուն Ազգանուն"
-                            required
-                            value={formData.name}
-                            onChange={handleChange}
-                            className="pl-[10px] w-[400px] pt-[15px] pb-[15px] border-none mb-[40px] rounded-[20px]"
-                        />
-                    </div>
+                            <div className="flex flex-col pt-[18px] pr-[18px] pb-[10px] pl-[18px]">
+                                <label
+                                    htmlFor="name"
+                                    className="h-[15.6px] tracking-[0.15px] mb-[10px] pl-[10px] text-[0.75rem] text-left font-[Team-Regular,Helvetica,Arial,sans-serif]"
+                                >
+                                    Անուն Ազգանուն*
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Անուն Ազգանուն"
+                                    required
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    className="pl-[22px] border border-[#ebedef] rounded-[30px] h-[44px] px-[15px] w-full"
+                                />
+                            </div>
 
-                    <div className="flex flex-col">
-                        <label htmlFor="organization" className="mb-[12px] text-[13px]">
-                            Կազմակերպություն <span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            type="text"
-                            id="organization"
-                            name="organization"
-                            required
-                            value={formData.organization}
-                            onChange={handleChange}
-                            className="pl-[10px] w-[400px] pt-[15px] pb-[15px] border-none mb-[40px] rounded-[20px]"
-                        />
-                    </div>
+                            <div className="flex flex-col pt-[18px] pr-[18px] pb-[10px] pl-[18px]">
+                                <label
+                                    htmlFor="organization"
+                                    className="h-[15.6px] tracking-[0.15px] mb-[10px] pl-[10px] text-[0.75rem] text-left font-[Team-Regular,Helvetica,Arial,sans-serif]"
+                                >
+                                    Կազմակերպություն*
+                                </label>
+                                <input
+                                    type="text"
+                                    id="organization"
+                                    name="organization"
+                                    required
+                                    value={formData.organization}
+                                    onChange={handleChange}
+                                    className="pl-[22px] border border-[#ebedef] rounded-[30px] h-[44px] px-[15px] w-full"
+                                />
+                            </div>
 
-                    <div className="flex flex-col">
-                        <label htmlFor="phone" className="mb-[12px] text-[13px]">
-                            Հեռախոսահամար <span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="0XXYYYYYY"
-                            pattern="0[0-9]{8}"
-                            required
-                            value={formData.phone}
-                            onChange={handleChange}
-                            className="pl-[10px] w-[400px] pt-[15px] pb-[15px] border-none mb-[40px] rounded-[20px]"
-                        />
-                    </div>
+                            <div className="flex flex-col pt-[18px] pr-[18px] pb-[10px] pl-[18px]">
+                                <label
+                                    htmlFor="phone"
+                                    className="h-[15.6px] tracking-[0.15px] mb-[10px] pl-[10px] text-[0.75rem] text-left font-[Team-Regular,Helvetica,Arial,sans-serif]"
+                                >
+                                    Հեռախոսահամար*
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="0XXYYYYYY"
+                                    pattern="0[0-9]{8}"
+                                    required
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    className="pl-[22px] border border-[#ebedef] rounded-[30px] h-[44px] px-[15px] w-full"
+                                />
+                            </div>
+                        </div>
 
-                    <div className="col-span-2 flex justify-center">
-                        <button
-                            type="submit"
-                            className="w-[250px] pt-[14px] pl-[20px] pr-[20px] pb-[14px] rounded-[20px] bg-[#ff0000] border-none text-[#ffffff] text-[20px]"
-                        >
-                            Միանալ
-                        </button>
-                    </div>
+                        <div className="flex justify-center mt-[30px]">
+                            <button
+                                type="submit"
+                                className="h-[44px] leading-[44px] min-w-[288px] px-[20px] text-center bg-[#F04D4D] border-none rounded-[30px] text-[#fff]"
+                            >
+                                Միանալ
+                            </button>
+                        </div>
+                    </form>
+
                 </div>
-            </form>
+
+            </div>
         </div>
     );
 }

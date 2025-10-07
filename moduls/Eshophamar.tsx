@@ -48,25 +48,27 @@ export default function EshopHamarSlider() {
     <div>
       <Eshopapranq />
       <div className="mb-[25px]">
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={slidesPerView}
-          slidesPerGroup={1}
-          pagination={{ clickable: true }}
-          loop={enableLoop}
-          speed={800}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-        >
-          {eshophamarner.map((el) => (
-            <SwiperSlide key={el.id}>
-              <Hamar vernagir={el.vernagir} hamar={el.hamar} gin={el.gin} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="mx-auto max-w-[1260px] px-[20px]">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={slidesPerView}
+            slidesPerGroup={1}
+            pagination={{ clickable: true }}
+            loop={enableLoop}
+            speed={800}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+          >
+            {eshophamarner.map((el) => (
+              <SwiperSlide key={el.id}>
+                <Hamar vernagir={el.vernagir} hamar={el.hamar} gin={el.gin} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
