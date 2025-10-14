@@ -84,9 +84,9 @@ const data: TariffData[] = [
 
 export default function SmartBusinessSlider() {
     return (
-        <div className="flex">
+        <div className="flex pt-[15px]">
             <div
-                className="w-[290px] h-[400px] bg-[#4b5d6d] flex flex-col items-center justify-around"
+                className="w-[288px] float-left h-[400px] bg-[#4b5d6d] flex flex-col items-center justify-around"
                 style={{ backgroundImage: 'url("https://www.telecomarmenia.am/img/settings.png")' }}
             >
                 <span className="h-64 flex flex-col items-center">

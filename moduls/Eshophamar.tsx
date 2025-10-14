@@ -10,7 +10,7 @@ import Hamar from "./Eshophamarmas";
 import { db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
 
-// 🔹 Տիպավորում տվյալների էլեմենտների համար
+
 interface HamarItem {
   id: string;
   vernagir: string;
