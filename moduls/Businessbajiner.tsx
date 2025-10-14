@@ -42,10 +42,12 @@ export default function BiznesFromFirebase() {
     if (error) return <p>Սխալ՝ {error}</p>;
 
     return (
-        <div className="grid grid-cols-2 justify-items-center gap-4 mt-[50px] m-[90px] lg:grid-cols-2">
-            {biznes.map(el => (
-                <Biznesmas key={el.id}  name={el.name} text1={el.text1} image={el.image} />
-            ))}
+        <div className="pt-[39px] pb-[81px]">
+            <div className="mx-auto max-w-[1260px] px-[20px] flex flex-wrap gap-[20px]">
+                {biznes.map(el => (
+                    <Biznesmas key={el.id} name={el.name} text1={el.text1} image={el.image} />
+                ))}
+            </div>
         </div>
     );
 }

@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "./firebase"; 
+import { db } from "./firebase";
 import Eshopbajin from './Eshopbajinermas';
 
 interface EshopItem {
-  id: string | number;
-  name: string;
-  text1: string;
-  text2: string;
-  image: string;
-  bg: string;
-  color: string;
+    id: string | number;
+    name: string;
+    text1: string;
+    text2: string;
+    image: string;
+    bg: string;
+    color: string;
 }
 
 export default function EshopList() {
@@ -36,18 +36,20 @@ export default function EshopList() {
     }, []);
 
     return (
-        <div className="grid grid-cols-2 justify-items-center gap-4 mt-[50px] m-[90px] lg:grid-cols-2">
-            {eshop.map((el) => (
-                <Eshopbajin
-                    key={el.id}
-                    name={el.name}
-                    text1={el.text1}
-                    text2={el.text2}
-                    image={el.image}
-                    bg={el.bg}
-                    color={el.color}
-                />
-            ))}
+        <div className="pt-[39px] pb-[81px]">
+            <div className="mx-auto max-w-[1260px] px-[20px] flex flex-wrap gap-[20px]">
+                {eshop.map((el) => (
+                    <Eshopbajin
+                        key={el.id}
+                        name={el.name}
+                        text1={el.text1}
+                        text2={el.text2}
+                        image={el.image}
+                        bg={el.bg}
+                        color={el.color}
+                    />
+                ))}
+            </div>
         </div>
     );
 }

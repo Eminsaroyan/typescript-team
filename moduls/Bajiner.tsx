@@ -34,10 +34,12 @@ export default function GlxavorList() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 justify-items-center gap-4 mt-[30px] m-[90px] lg:grid-cols-2">
-      {glxavor.map(({ id, name, image }) => (
-        <Maser key={id}  name={name} image={image} />
-      ))}
+    <div className="pt-[39px] pb-[81px]">
+      <div className="mx-auto max-w-[1260px] px-[20px] flex flex-wrap gap-[20px]">
+        {glxavor.map(({ id, name, image }) => (
+          <Maser key={id} name={name} image={image} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -78,38 +78,45 @@ const NavbarWithHeader: React.FC = () => {
   return (
     <div>
       <Headerone />
-      <nav className="flex justify-center mx-auto pr-[130px] pb-[5px] pt-[10px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] relative bg-white z-50">
-        <img
-          src="https://www.telecomarmenia.am/img/logo.svg?v=1"
-          alt="Logo"
-          className="cursor-pointer"
-        />
+      <div className=" h-[60px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]  bg-[#fff]">
+        <div className="mx-auto max-w-[1260px] px-[20px] z-50 text-center">
+          <Link
+            to="/anhatner">
+            <img
+              src="https://www.telecomarmenia.am/img/logo.svg?v=1"
+              alt="Logo"
+              className="cursor-pointer h-[54px] mt-[3px] w-[131px] float-left"
+            />
+          </Link>
+          <nav  className="h-[60px] ml-[30px]">
 
-        <ul className="list-none flex ml-[30px] gap-x-[35px] items-center">
-          {menus.map(({ title, items }, menuIdx) => (
-            <li key={menuIdx} className="relative group">
-              <p className="cursor-pointer text-[#2c3843] font-medium text-[16px] px-[12px] py-[1px] transition-colors duration-200 hover:text-blue-600">
-                {title}
-              </p>
-              <ul className="absolute top-full list-none left-0 w-[250px] bg-[#f8f9f9] rounded-b-[12px] shadow-xl z-50 hidden group-hover:block transition-all duration-300">
-                {items.map(({ name, to }, idx) => (
-                  <li
-                    key={idx}
-                    className="border-b border-[#ebedef] last:border-none transition-colors duration-200"
-                  >
-                    <Link
-                      to={to}
-                      className="block w-full px-[20px] py-[10px] text-[16px] text-[#2c3843] hover:text-blue-600 no-underline"
-                    >
-                      {name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </nav>
+            <ul className="list-none flex ml-[30px] h-[60px]  items-center">
+              {menus.map(({ title, items }, menuIdx) => (
+                <li key={menuIdx} className="relative group">
+                  <p className="cursor-pointer px-[30px] text-[#2c3843] font-medium text-[16px] px-[12px] py-[1px] transition-colors duration-200 hover:text-blue-600">
+                    {title}
+                  </p>
+                  <ul className="absolute top-full text-start list-none left-0 w-[250px] bg-[#f8f9f9] rounded-b-[12px] shadow-xl z-50 hidden group-hover:block transition-all duration-300">
+                    {items.map(({ name, to }, idx) => (
+                      <li
+                        key={idx}
+                        className="border-b border-[#ebedef] last:border-none transition-colors duration-200"
+                      >
+                        <Link
+                          to={to}
+                          className="block w-full px-[20px] py-[10px] text-[16px] text-[#2c3843] hover:text-blue-600 no-underline"
+                        >
+                          {name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   );
 };

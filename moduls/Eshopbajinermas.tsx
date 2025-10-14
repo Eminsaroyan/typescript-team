@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-// ✅ Տիպավորում props-երի համար
 interface EshopbajinProps {
   name: string;
   text1: string;
@@ -15,7 +14,7 @@ export default function Eshopbajin({ name, text1, text2, image, bg, color }: Esh
 
   return (
     <div
-      className="flex justify-between items-start w-[600px] md:max-w-2xl pl-[30px] rounded-[12px] mb-[10px] cursor-pointer"
+      className="flex justify-between items-start w-[580px] md:max-w-2xl pl-[30px] rounded-[12px] mb-[10px] cursor-pointer"
       style={{ backgroundColor: bg }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
