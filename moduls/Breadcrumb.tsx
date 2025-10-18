@@ -159,28 +159,30 @@ export default function Breadcrumb() {
 
     if (exactMatch) {
         return (
-            <div className="text-[14px] max-w-[1230px] m-auto mt-[20px] mb-6">
-                {Array.isArray(exactMatch) ? (
-                    exactMatch.map((crumb, idx) => (
-                        <span key={idx} className="text-black">
-                            {idx > 0 && " > "}
-                            {crumb.to ? (
-                                <Link to={crumb.to} className="text-[#000000] hover:underline">
-                                    {crumb.label}
-                                </Link>
-                            ) : (
-                                <span>{crumb.label}</span>
-                            )}
-                        </span>
-                    ))
-                ) : (
-                    <>
-                        <Link to="/" className="text-[#000000] hover:underline">
-                            Գլխավոր
-                        </Link>
-                        <span className="text-black">{" > "}{exactMatch}</span>
-                    </>
-                )}
+            <div className="border-b border-[#ebedef] pt-[20px] pb-[20px]">
+                <div className="text-[14px] mx-auto max-w-[1260px] px-[20px]">
+                    {Array.isArray(exactMatch) ? (
+                        exactMatch.map((crumb, idx) => (
+                            <span key={idx} className="text-black ">
+                                {idx > 0 && " > "}
+                                {crumb.to ? (
+                                    <Link to={crumb.to} className="text-[#000000] hover:underline">
+                                        {crumb.label}
+                                    </Link>
+                                ) : (
+                                    <span>{crumb.label}</span>
+                                )}
+                            </span>
+                        ))
+                    ) : (
+                        <>
+                            <Link to="/" className="text-[#000000] hover:underline">
+                                Գլխավոր
+                            </Link>
+                            <span className="text-black">{" > "}{exactMatch}</span>
+                        </>
+                    )}
+                </div>
             </div>
         );
     }
